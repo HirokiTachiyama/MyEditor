@@ -13,3 +13,10 @@
 
 #include "buffer.h"
 
+buffer::buffer (string _buf_name) {
+  buf_name = _buf_name;
+  cursor_x=0; cursor_y=0;
+  str_vect.push_back("");
+}
+
+

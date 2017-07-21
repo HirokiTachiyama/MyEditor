@@ -16,6 +16,9 @@
 #define __MY_EDITOR__
 
 #include "buffer.h"
+#include <iostream>
+
+using namespace std;
 
 #endif
 

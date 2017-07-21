@@ -7,36 +7,31 @@
 /**
  * @brief バッファの情報を保持するクラス
 
-  @detail 
+  @detail
   テキスト保持にはLine構造体をリストで繋いだやつ。
   他には、バッファ名、マウスカーソルの位置などを保持。
  *
  */
 
-
-
 #ifndef __BUFFER_H__
 #define __BUFFER_H__
 
-//! @struct
-typedef struct _Line{
-  char *txt_str;
-  struct _Line* next;
-} Line;
+#include <iostream>
+#include <string>
+#include <vector>
 
+using namespace std;
 
 class buffer {
-  Line* top;
-  char* buf_name;
-  int total_of_lines;
-  
-  //! @var
-  int x, y;
-
 public:
-  buffer();
+  vector<string> str_vect; //テキスト
+  string buf_name; //バッファの名前
+
+  //! @var
+  int cursor_x, cursor_y; //カーソル位置
+
+  buffer(string);
 };
 
-
-
 #endif
+
