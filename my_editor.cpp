@@ -19,6 +19,5 @@ int main (void) {
   //buffer buf;
   std::cout << "Hello C++!\n";
 
-  
   return 0;
 }
