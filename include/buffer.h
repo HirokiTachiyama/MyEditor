@@ -23,15 +23,16 @@
 using namespace std;
 
 class buffer {
-public:
+ public:
   vector<string> str_vect; //テキスト
   string buf_name; //バッファの名前
 
   //! @var
   int cursor_x, cursor_y; //カーソル位置
 
-  buffer(string);
+  //member methods
+  buffer (string);
+  void display_str_vect ();
 };
 
 #endif
-
