@@ -21,18 +21,17 @@ int main (void) {
   buffer buf("buffer");
   cout << "Hello C++!" << endl;
 
-  buf.str_vect.push_back("hoge");
-  cout << buf.str_vect[0];
-
-  buf.str_vect.push_back("fuga");
-  buf.str_vect.push_back("tohoho");
-  buf.str_vect.push_back("nyoho");
-  cout << buf.str_vect[0];
-  cout << buf.str_vect[1];
-  cout << buf.str_vect[2];
-  cout << buf.str_vect[3] << endl;
-  //buf.display_str_vect();
+  buf.add_line("hoge");
+  cout << buf.get_line_index_of(0);
+  buf.add_line("fuga");
+  buf.add_line("tohoho");
+  buf.add_line("nyoho");
+  cout << buf.get_line_index_of(1);
+  cout << buf.get_line_index_of(2);
+  cout << buf.get_line_index_of(3) << endl;
 
 
   return 0;
 }
+
+

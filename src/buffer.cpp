@@ -21,6 +21,15 @@ buffer::buffer (string _buf_name) {
 }
 
 
+
+void buffer::add_line (string str) {
+  str_vect.push_back(str);
+}
+
+string buffer::get_line_index_of (int index) {
+  return str_vect[index];
+}
+
 void buffer::display_str_vect () {
 
   //autoで型推論を行ってくれる

@@ -32,6 +32,8 @@ class buffer {
 
   //member methods
   buffer (string);
+  void add_line (string);
+  string get_line_index_of (int);
   void display_str_vect ();
 };
 
