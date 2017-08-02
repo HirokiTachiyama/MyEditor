@@ -1,8 +1,8 @@
+# Makefile
+# My Editor
 #
-#
-#
-#
-#
+# Copyrights (c) Hiroki Tachiyama
+# Create 2017/7/21 22:55
 #
 
 CXX = g++
