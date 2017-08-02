@@ -30,3 +30,4 @@ void do_curses () {
 
   endwin();
 }
+
